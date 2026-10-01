@@ -1,0 +1,79 @@
+.transaction-history {
+  animation: fadeIn 0.3s ease;
+}
+
+.transaction-history h3 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.transactions-table thead {
+  background: #f8f9fa;
+  border-bottom: 2px solid #ddd;
+}
+
+.transactions-table th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+}
+
+.transactions-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.transactions-table code {
+  background: #f8f9fa;
+  padding: 3px 6px;
+  border-radius: 3px;
+  font-size: 0.85rem;
+}
+
+.transactions-table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.empty-message {
+  text-align: center;
+  color: #999;
+  padding: 40px;
+  font-size: 1.1rem;
+}
+
+.transaction-history button {
+  padding: 10px 20px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.transaction-history button:hover:not(:disabled) {
+  background: #5568d3;
+}
+
+.transaction-history button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
